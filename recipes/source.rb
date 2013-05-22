@@ -141,7 +141,7 @@ if platform?("debian","ubuntu")
       action :install
     end
     execute "update rubygems" do
-      command '/var/lib/gems/1.8/bin/update_rubygems'
+      command 'update_rubygems'
     end
     execute "install bundler" do
       command 'gem install bundler'
